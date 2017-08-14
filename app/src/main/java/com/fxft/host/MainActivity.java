@@ -70,6 +70,12 @@ public class MainActivity extends Activity {
                 }, 1000);
             }
         });
+        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,Main2Activity.class));
+            }
+        });
     }
 
     private static final int REQUEST_CODE_DEMO1 = 0x011;
